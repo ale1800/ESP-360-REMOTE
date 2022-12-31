@@ -5,11 +5,21 @@ This board features 433MHz transmitter and receiver. IR leds are placed in circl
 
 The first layer of the board includes the ESP32, the two sensors, the buck converter and the USB circuitry.
 
-<img src="https://user-images.githubusercontent.com/53172176/206875959-e2c99f53-f394-4c12-8f30-66c4878ba715.jpg" width=400/>
+<img src="https://raw.githubusercontent.com/ale1800/ESP-360-REMOTE/main/Images/bottom.jpg" width=300/>
 
 The second layer of the board features the IR leds and receiver and the RF modules.
 
-<img src="https://user-images.githubusercontent.com/53172176/206876042-bdadf340-1a08-42ee-bcaa-a01f946e83c0.jpg" width=400/>
+<img src="https://raw.githubusercontent.com/ale1800/ESP-360-REMOTE/main/Images/top.jpg" width=300/>
+
+Inside the enclosure just stack the two layers:
+
+<img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled_bottom.jpg" width=300/><img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled_both.jpg" width=300/>
+
+The screw the top part on turn the board on!
+
+<img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled.jpg" width=300/>
+
+
 
 License:
 
