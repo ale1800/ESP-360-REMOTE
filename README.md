@@ -4,6 +4,9 @@ An all-in-one remote based on the ESP32-WROOM-32E
 The project on Hackaday: https://hackaday.io/project/188353-esp-360-remote
 
 This board features 433MHz transmitter and receiver. IR leds are placed in circle to cover all the directions. It includes a temperature & humidity and an ambient light sensor. Furthermore you can power and program it through the USB TYPE-C, ESD protected. This board is based around the ESP32-WROOM-32E, so it's super easy to set everything up with ESPHOME and controlling it from Home Assistant.
+I think the form factor it's nice. There are two stackable layers. The bottom one includes the power circuitry, the ESP32 and the temperature, humidity and the light sensor.s In the top one there are the IR leds, IR receiver and the RF modules.
+
+In the end, the project also as the OSHWA certification, so it's completely open source!
 
 The first layer of the board includes the ESP32, the two sensors, the buck converter and the USB circuitry.
 
