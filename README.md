@@ -43,7 +43,7 @@ https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg
 
 # Enclosure
 
-In this repo you can also file the two step files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
+In this repo you can also file the two stl files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
 The already designed one has some openings near the usb-c and the two built-in sensors, to improve the air flow to cool down the temperature sensor. The top part is screwable, so you don't need screws or other components
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg" width=500/>
