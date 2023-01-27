@@ -39,7 +39,6 @@ The board is really small. It fits everywhere It is only 5cm (diameter) x 3cm (h
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/vs_broadlink.jpeg" width=500/>
 
-https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg
 
 # Enclosure
 
