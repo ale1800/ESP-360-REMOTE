@@ -1,0 +1,94 @@
+esphome:
+  name: esp360remote
+
+esp32:
+  board: esp32doit-devkit-v1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "nossid"
+  password: "nopassword"
+
+  #HotSpot quando non riesce a collegarsi al WiFi
+  ap:
+    ssid: "Esp360Remote"
+    password: "Esp360Remote"
+
+captive_portal:
+    
+#Definizione pin della porta i2c
+i2c:
+  sda: 21
+  scl: 22
+  scan: true
+  id: bus_a
+
+#Aggiunti degli offset sulle misure effettuate. 
+#Sono necessarie per via del calore della pcb, del secondo strato della scheda e del case
+#In questo modo si ottengono dei valori sufficientemente precisi per le automazioni
+sensor:
+  - platform: shtcx
+    temperature:
+      name: "Living Room Temperature"
+      filters:
+        - offset: -4
+    humidity:
+      name: "Living Room Humidity"
+      filters:
+        - offset: +19.1   
+    address: 0x70
+    update_interval: 120s
+  - platform: bh1750
+    name: "BH1750 Illuminance"
+    address: 0x23
+    update_interval: 1s
+
+#Impostazione dei ricevitori IR e RF
+remote_receiver:
+  - id: RF_RX
+    pin: 
+      number: GPIO5
+      inverted: True
+    dump: 
+      - rc_switch
+    tolerance: 35%
+    filter: 200us
+    idle: 4ms
+    buffer_size: 10kb
+  - id: IR_RX
+    pin: 
+      number: GPIO19
+      inverted: True
+    dump: all
+
+
+#Impostazione dei trasmettitori IR e RF
+remote_transmitter:
+  - id: RF_TX
+    pin: GPIO18
+    carrier_duty_percent: 100%
+  - id: IR_TX
+    pin: GPIO13
+    carrier_duty_percent: 50%
+
+
+web_server:
+  port: 80
+
+#Status LED 
+switch:
+  - platform: gpio
+    pin: 12
+    name: "Status Led"
+    restore_mode: ALWAYS_ON
