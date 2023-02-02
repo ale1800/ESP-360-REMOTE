@@ -40,7 +40,8 @@ The board is really small. It fits everywhere It is only 5cm (diameter) x 3cm (h
 # Enclosure
 
 In this repo you can also file the two stl files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
-The already designed one has some openings near the usb-c and the two built-in sensors, to improve the air flow to cool down the temperature sensor. The top part is screwable, so you don't need screws or other components
+The already designed one has some openings near the usb-c and the two built-in sensors, to improve the air flow to cool down the temperature sensor. The top part is screwable, so you don't need screws or other components.
+I only tried printing with light colors PLA and the IR transmission was not affected at all. I can't say anything about other materials or dark colors
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg" width=500/>
 
