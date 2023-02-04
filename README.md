@@ -24,7 +24,7 @@ Inside the enclosure just stack the two layers using the x8 female header near t
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled_bottom.jpg" width=300/><img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled_both.jpg" width=300/>
 
-The screw the top part and turn the board on!
+Then screw the top part and turn the board on!
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/assembled.jpg" width=300/>
 
@@ -32,21 +32,21 @@ Now you can also program the board with the USB-C. I suggest to use ESPHOME beac
 
 # Dimensions
 
-The board is really small. It fits everywhere It is only 5cm (diameter) x 3cm (height) without the enclosure. This is the comparison against the broadlink rm3 mini, the only device I have as reference
+The board is really small. It fits everywhere because is only 5cm (diameter) x 3.5cm (height) without the enclosure. This is the comparison against the broadlink rm3 mini, the only device I have as reference
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/vs_broadlink.jpeg" width=500/>
 
 
 # Enclosure
 
-In this repo you can also file the two stl files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
+In this repo you can also find the two stl files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
 The already designed one has some openings near the usb-c and the two built-in sensors, to improve the air flow to cool down the temperature sensor. The top part is screwable, so you don't need screws or other components.
 I only tried printing with light colors PLA and the IR transmission was not affected at all. I can't say anything about other materials or dark colors
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg" width=500/>
 
 # OSHWA Certification
-In the end, the project also as the OSHWA certification with UID IT000012, so it's completely open source!
+In the end, the project also has the OSHWA certification with UID IT000012, so it's completely open source!
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/oshwa.jpeg" width=500/>
 
