@@ -11,7 +11,23 @@ logger:
 
 # Enable Home Assistant API
 api:
-  password: ""
+  services:
+    - service: send_ir_raw
+      variables:
+        command: int[]
+      then:
+        - remote_transmitter.transmit_raw:
+            transmitter_id: IR_TX
+            code: !lambda 'return command;'
+    - service: send_rf_raw
+      variables:
+        protocol_number: int
+        raw_data: string
+      then:
+        - remote_transmitter.transmit_rc_switch_raw:
+            transmitter_id: RF_TX
+            protocol: !lambda 'return  esphome::remote_base::RC_SWITCH_PROTOCOLS[protocol_number];'
+            code: !lambda 'return raw_data;'
 
 ota:
   password: ""
