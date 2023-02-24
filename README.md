@@ -5,7 +5,7 @@ The project on Hackaday: https://hackaday.io/project/188353-esp-360-remote
 
 Pre-launch page on CrowdSupply: https://www.crowdsupply.com/aaelectronics/esp-360-remote
 
-This board features 433MHz transmitter and receiver. IR leds are placed in circle to cover all the directions. It includes a temperature & humidity and an ambient light sensor. Furthermore you can power and program it through the USB TYPE-C, ESD protected. This board is based around the ESP32-WROOM-32E, so it's super easy to set everything up with ESPHOME and controlling it from Home Assistant.
+This board boasts a 433MHz transmitter and receiver, while IR LEDs are arranged in a circle to provide omnidirectional coverage. Additionally, it comes equipped with a temperature and humidity sensor, as well as an ambient light sensor. To top it off, the board can be powered and programmed through a USB Type-C port, which is ESD protected. Based on the ESP32-WROOM-32E, this board can be effortlessly configured with ESPHome, allowing for seamless control via Home Assistant.
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/photo_5945308819246659897_y.jpg" width=500/>
 
@@ -30,18 +30,39 @@ Then screw the top part and turn the board on!
 
 Now you can also program the board with the USB-C. I suggest to use ESPHOME beacuse it's super easy to setup and to integrate with Home Assistant
 
+# Home Assistant integration
+
+ESP 360 REMOTE is designed to be fully integrated into Home Assistant and leverage the capabilities provided by ESPHome. If you decide to use the configuration file provided in this repo, you will see these exposed entities:
+
+<img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/esp-360-Home-Assistant.jpg" width=500/>
+
+## Transmitting signals
+
+Thanks to the ease of use of ESPHome, you can create custom switches or integrate existing components (see https://esphome.io/components/climate/climate_ir.html) by directly modifying the yaml file, and all of this will be immediately visible on Home Assistant. Alternatively, if you want to take an even simpler route, you can use two integrated services to send raw IR and RF signals:
+
+<img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/services.png" width=500/>
+
+This way you won't need to tinker with the ESPHome configuration and you'll be able to send signals directly from your automations!
+
+## Receiving signals
+
+When the board receives an RF signal, the **esphome.rf_code_received** event will be triggered in Home Assistant. From there, you can directly see the protocol and code of the received signal. The same feature will soon be available for the infrared receiver as well.
+
+<img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/event.jpg" width=800/>
+
+In this case, I received the code 721136 (10110000000011110000 in binary) and protocol 2
+
+
 # Dimensions
 
-The board is really small. It fits everywhere because is only 5cm (diameter) x 3.5cm (height) without the enclosure. This is the comparison against the broadlink rm3 mini, the only device I have as reference
+The board is remarkably compact, measuring just 5cm in diameter and 3.5cm in height without the enclosure. This small form factor makes it a perfect fit for any space. To put its size into perspective, it's smaller than the Broadlink RM3 Mini, which is the only device I have available for comparison.
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/vs_broadlink.jpeg" width=500/>
 
 
 # Enclosure
 
-In this repo you can also find the two stl files of the enclosure, so you can print it yourself choosing the color according to where you want to place it!
-The already designed one has some openings near the usb-c and the two built-in sensors, to improve the air flow to cool down the temperature sensor. The top part is screwable, so you don't need screws or other components.
-I only tried printing with light colors PLA and the IR transmission was not affected at all. I can't say anything about other materials or dark colors
+Within this repository, you can also access the two STL files for the enclosure, which enables you to print it in your preferred color to match its intended location. The pre-designed enclosure includes openings near the USB-C port and two built-in sensors to optimize airflow and cool down the temperature sensor. The top part of the enclosure can be screwed on, so there's no need for additional screws or components. I've only tested printing with light-colored PLA, and the IR transmission was not impacted at all. However, I can't make any claims about other materials or dark colors.
 
 <img src="https://github.com/ale1800/ESP-360-REMOTE/blob/main/Images/without_top.jpeg" width=500/>
 
