@@ -82,6 +82,12 @@ remote_receiver:
     filter: 200us
     idle: 4ms
     buffer_size: 10kb
+    on_rc_switch:
+      - homeassistant.event:
+          event: esphome.rf_code_received
+          data:
+            protocol: !lambda 'return x.protocol;'
+            code: !lambda 'return x.code;' 
   - id: IR_RX
     pin: 
       number: GPIO19
