@@ -53,6 +53,22 @@ When the board receives an RF signal, the **esphome.rf_code_received** event wil
 
 In this case, I received the code 721136 (10110000000011110000 in binary) and protocol 2
 
+## SmartIR Integration
+
+ESPHome ensures compatibility with the widely-used SmartIR custom component for Home Assistant, thanks to its built-in support for transmitting raw signals. If you already have a SmartIR configuration in place, all you need to do is specify the appropriate service for transmitting signals and a code that is compatible with ESPHome. Here's an example of what your configuration.yaml file could look like:
+
+```
+smartir:
+
+climate:
+  - platform: smartir
+    name: Livingroom AC
+    unique_id: livingroom_ac
+    device_code: 7065
+    controller_data: esp360remote_send_ir_raw
+    temperature_sensor: sensor.living_room_temperature
+```
+For more information, check out the [SmartIR repo](https://github.com/smartHomeHub/SmartIR).
 
 # Dimensions
 
