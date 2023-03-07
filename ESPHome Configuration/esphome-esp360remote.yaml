@@ -10,6 +10,7 @@ esp32:
 logger:
 
 # Enable Home Assistant API
+# Services available for Home Assistant automation and SmartIR
 api:
   services:
     - service: send_ir_raw
