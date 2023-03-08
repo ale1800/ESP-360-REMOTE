@@ -3,7 +3,7 @@ An all-in-one remote based on the ESP32-WROOM-32E
 
 The project on Hackaday: https://hackaday.io/project/188353-esp-360-remote
 
-Pre-launch page on CrowdSupply: https://www.crowdsupply.com/aaelectronics/esp-360-remote
+The project is live on CrowdSupply: https://www.crowdsupply.com/aaelectronics/esp-360-remote
 
 This board boasts a RF transmitter and receiver, while IR LEDs are arranged in a circle to provide omnidirectional coverage. Additionally, it comes equipped with a temperature and humidity sensor, as well as an ambient light sensor. To top it off, the board can be powered and programmed through a USB Type-C port, which is ESD protected. Based on the ESP32-WROOM-32E, this board can be effortlessly configured with ESPHome, allowing for seamless control via Home Assistant.
 You can swap the 433MHz modules with 315MHz ones because the SRX/STX882 modules come in both version with the same pinout, so you can choose which one fit your needs the best
