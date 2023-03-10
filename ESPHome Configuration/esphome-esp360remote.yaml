@@ -96,7 +96,26 @@ remote_receiver:
       number: GPIO19
       inverted: True
     dump: all
-
+    on_raw:
+       - homeassistant.event:
+          event: esphome.ir_raw_code_received
+          data:
+            code: !lambda '
+            reverse(x.begin(), x.end());
+            std::string str = "";
+            for (auto it = x.begin(); it != x.end(); ++it)
+            {
+              str += to_string(*it);
+              str += ",";
+              if (it != x.end() - 1) str += " ";
+            }
+            if (str.size() > 0)  str.erase( str.end() - 2);
+            return esphome::to_string("[" + str + "]");'   
+    on_pronto:
+       - homeassistant.event:
+          event: esphome.ir_pronto_code_received
+          data:
+            code: !lambda 'return x.data;'
 
 #Setting up IR and RF transmitters
 remote_transmitter:
