@@ -116,6 +116,18 @@ remote_receiver:
           event: esphome.ir_pronto_code_received
           data:
             code: !lambda 'return x.data;'
+    on_lg:
+       - homeassistant.event:
+          event: esphome.ir_lg_code_received
+          data:
+            data: !lambda 'return x.data;'
+            nbits: !lambda 'return x.nbits;'
+    on_panasonic:
+       - homeassistant.event:
+           event: esphome.ir_panasonic_code_received
+           data:
+            address: !lambda 'return x.address;'
+            command: !lambda 'return x.command;'
 
 #Setting up IR and RF transmitters
 remote_transmitter:
