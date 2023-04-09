@@ -59,7 +59,10 @@ sensor:
     temperature:
       name: "Living Room Temperature"
       filters:
-        - offset: -4
+        - median: 
+            window_size: 5
+            send_every: 1
+        - offset: -3.7
     humidity:
       name: "Living Room Humidity"
       filters:
