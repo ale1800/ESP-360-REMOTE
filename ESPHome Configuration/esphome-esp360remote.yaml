@@ -68,7 +68,7 @@ sensor:
       filters:
         - offset: +19.1   
     address: 0x70
-    update_interval: 120s
+    update_interval: 300s
   - platform: bh1750
     name: "BH1750 Illuminance"
     filters:
