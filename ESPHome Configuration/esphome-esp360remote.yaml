@@ -66,6 +66,9 @@ sensor:
     humidity:
       name: "Living Room Humidity"
       filters:
+        - median: 
+            window_size: 5
+            send_every: 1
         - offset: +19.1   
     address: 0x70
     update_interval: 300s
