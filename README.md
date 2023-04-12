@@ -2,7 +2,7 @@
 ## An all-in-one remote based on the ESP32-WROOM-32E
 
 
-- ## The project is live on [CrowdSupply](https://www.crowdsupply.com/aaelectronics/esp-360-remote)
+- ## ESP 360 Remote on [CrowdSupply](https://www.crowdsupply.com/aaelectronics/esp-360-remote)
 
 - ## ESP 360 Remote on [Discord](https://discord.gg/PsrK3KDkRy)
 
