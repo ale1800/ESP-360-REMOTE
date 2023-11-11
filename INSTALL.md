@@ -61,26 +61,30 @@ from there you can create a new device
 
 once done, click on skip for the install and click "edit" instead from the main menu : 
 
-![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/8a15594a-a562-450f-a4b7-fa74b08b9b23)
-
 remplace the text with the one found in the [ESPHome Configuration](ESPHome Configuration) folder.
 as explained in the template section of this file
 once happy with your config you can compile by clicking save then come back to the main menu and click the "..." then install
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/d8344466-55ab-4160-86c9-c3f37f18ba89)
 
 choose manual download
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/e6ae26cc-6eb6-4dc1-970b-3d262d75b06b)
+
 the file will be compiled to a .bin that you will be able to download. you need to download the legacy format :
 
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/dbe9ecfa-dd81-4144-9331-9234900aaab9)
 
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/e6f7382d-27fc-405e-8511-8cb5cea83d2e)
 
 from there, give it a name and choose ESP32
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/3865ad0b-b6ad-4962-8827-30d46b669c8e)
 
 now return to the webpage of the ESP 360 Remote and under OTA Update browse for the file you previously downloaded and click update
 once the device as rebooted, you should see the value from the sensors and your switch
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/8dd688a1-7d29-4f24-bf66-537c23cb7060)
 
 you are done :)
@@ -127,7 +131,9 @@ you will need to adapt the transmit_nec function to your protocol and replace th
 if you dont know theses, you can start by compilling the base template and go to the webpage of the ESP 360 remote, you should see a terminal that display the data from the sensors and the IR + RF transceiver
 just point the remote you want to clone toward the ESP 360  remote and look at the code display in the terminal.
 it should looks like something like this :
+
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/0b4145c7-22b1-4e91-9b0d-4f6a9d262afe)
+
 the line that we care about is the following
 ```
 Received NEC: address=0xFE01, command=0xE21D
