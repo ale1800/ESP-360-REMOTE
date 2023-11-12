@@ -15,7 +15,8 @@ for this step you will require a USB-C cable that has power + data (a normal cab
 open the following [link](https://web.esphome.io/) in your browser once the device is connected to your computer using the USB-C cable
 you need to click on "connect"
 
-![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/d5390c21-c24f-41e1-a038-98f9d171800e)
+![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/2bd903d1-df8f-49df-af7e-fb075620a588)
+
 
 and select the USB-Serial device, if no USB serial device appear, ensure your USB cable is good and that you have the CH240X driver (the tool give you the link to install the driver if needed)
 
