@@ -1,6 +1,6 @@
 # Introduction
 
-if you know esphome, you can skip most of this document and just use the template in the [ESPHome Configuration](ESPHome Configuration/esp360-default-1.yaml) folder.
+If you know ESPHome, you can skip most of this document and just use the template in the [ESPHome Configuration](ESPHome Configuration/esp360-default-1.yaml) folder.
 
 if you don't know much about esphome this guide will guide you through the installation process. if you need more information you can head to [Discord](https://discord.gg/PsrK3KDkRy) and if you see something that is not clear enough, do not hesistate to make a pull request and improve the documentation for everybody.
 
