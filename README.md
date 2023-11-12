@@ -35,7 +35,7 @@ Now you can also program the board with the USB-C. I suggest to use ESPHOME beac
 
 # Installation
 Once you receive the ESP 360 Remote you will need to flash ESPHome on it and configure the remote commands you want to clone.
-please head to [INSTALL.md](INSTALL.md)
+[INSTALL.md](INSTALL.md) has detailed instructions to follow.
 
 # Home Assistant Integration
 
