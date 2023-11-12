@@ -34,7 +34,7 @@ Then screw the top part and turn the board on!
 Now you can also program the board with the USB-C. I suggest to use ESPHOME beacuse it's super easy to setup and to integrate with Home Assistant
 
 # Installation
-once you received the ESP 360 Remote you will need to flash esp home on it and configure the action you need.
+Once you receive the ESP 360 Remote you will need to flash ESPHome on it and configure the remote commands you want to clone.
 please head to [INSTALL.md](INSTALL.md)
 
 # Home Assistant integration
