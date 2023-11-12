@@ -20,7 +20,8 @@ you need to click on "connect"
 
 and select the USB-Serial device, if no USB serial device appear, ensure your USB cable is good and that you have the CH240X driver (the tool give you the link to install the driver if needed)
 
-![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/8a85914c-d865-4ee3-bd17-9f1b856367f2)
+![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/a0e29219-d31b-46d2-84c6-6d38e013bf19)
+
 
 once you are conencted you should be able to click there : 
 
