@@ -58,14 +58,14 @@ i2c:
 sensor:
   - platform: shtcx
     temperature:
-      name: "Living Room Temperature"
+      name: "Temperature"
       filters:
         - median: 
             window_size: 5
             send_every: 1
         - offset: -3.7
     humidity:
-      name: "Living Room Humidity"
+      name: "Humidity"
       filters:
         - median: 
             window_size: 5

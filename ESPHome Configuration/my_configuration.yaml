@@ -32,7 +32,7 @@ i2c:
 sensor:
   - platform: shtcx
     temperature:
-      name: "Living Room Temperature"
+      name: "Temperature"
       id: "Temperature"
       filters:
         - median: 
@@ -40,7 +40,7 @@ sensor:
             send_every: 1
         - offset: -3.7
     humidity:
-      name: "Living Room Humidity"
+      name: "Humidity"
       id: "Humidity"
       filters:
         - offset: +19.1  
@@ -220,7 +220,7 @@ switch:
 
 climate:
   - platform: coolix      
-    name: "Living Room AC"
+    name: "AC"
     transmitter_id: IR_TX
     sensor: Temperature
     receiver_id: IR_RX
