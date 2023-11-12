@@ -152,6 +152,6 @@ Received NEC: address=0xFE01, command=0xE21D
 ```
 this line give you the protocol (NEC) the address and the command. if you have another protocol lookup in the ESPhome documentation the specific syntax.
 
-you can now edit the snippet with your value and add as many as you need for every function you want.
+Edit the example template with your value and add as many as you need for every function of your remote you want to clone and use from the ESP 360 Remote.
 
 (dont hesitate to read the ESPhome documentation as it will give you more detailled info and more options to configure your actions)
