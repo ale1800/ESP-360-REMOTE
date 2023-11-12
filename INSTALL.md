@@ -2,7 +2,7 @@
 
 If you know ESPHome, you can skip most of this document and just use the template in the [ESPHome Configuration](ESPHome Configuration/esp360-default-1.yaml) folder.
 
-if you don't know much about esphome this guide will guide you through the installation process. if you need more information you can head to [Discord](https://discord.gg/PsrK3KDkRy) and if you see something that is not clear enough, do not hesistate to make a pull request and improve the documentation for everybody.
+If you don't know much about ESPHome this document will guide you through the installation process. If you need more information you can head to [Discord](https://discord.gg/PsrK3KDkRy) and if you see something that is not clear enough, do not hesitate to make a pull request and improve the documentation for everybody.
 
 there are three way to use your device :
 * standalone : good if you plan to setup the device once and forget about it, interract with your device using a webpage
