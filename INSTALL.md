@@ -23,9 +23,10 @@ and select the USB-Serial device, if no USB serial device appear, ensure your US
 ![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/a0e29219-d31b-46d2-84c6-6d38e013bf19)
 
 
-once you are conencted you should be able to click there : 
+once you are connected you should be able to click there : 
 
-![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/2bd723f7-c853-4a67-82dd-09b676650a08)
+![image](https://github.com/nathmo/ESP-360-REMOTE/assets/15912256/e81471e2-3604-4299-94cf-40febff231c9)
+
 
 the process takes a few minutes and ask for your wifi credentials toward the end so that the device can connect to your network.
 once it's done you should be able to access the webpage hosted by the ESP 360 Remote
