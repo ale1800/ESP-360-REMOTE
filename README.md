@@ -34,7 +34,7 @@ Then screw the top part and turn the board on!
 Now you can also program the board with the USB-C. I suggest to use ESPHOME beacuse it's super easy to setup and to integrate with Home Assistant
 
 # Installation
-Once you receive the ESP 360 Remote, if you don't have a running server of Home Assistant, you will need to follow the instructions in [INSTALL.md](INSTALL.md) to use the board as a "standalone" product.
+Once you receive the ESP 360 Remote, if you don't have a running server of Home Assistant, you will need to follow the instructions in [INSTALL.md](INSTALL.md) to use the board as a "standalone" product, otherwise just follow the [quick start guide](https://github.com/ale1800/ESP-360-REMOTE/blob/main/Quick%20installation%20guide.pdf).
 
 # Home Assistant Integration
 
