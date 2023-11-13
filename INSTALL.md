@@ -1,6 +1,6 @@
 # Introduction
 
-To start, follow the [quick start guide](https://github.com/ale1800/ESP-360-REMOTE/blob/main/Quick%20start%20guide.md) just for the assembly part.
+To start, follow the [quick start guide](https://github.com/ale1800/ESP-360-REMOTE/blob/main/Quick%20start%20guide.md) just for the installation part.
 
 If you know ESPHome, you can skip most of this document and just use the template in the [ESPHome Configuration](https://github.com/ale1800/ESP-360-REMOTE/tree/main/ESPHome%20Configuration) folder.
 
