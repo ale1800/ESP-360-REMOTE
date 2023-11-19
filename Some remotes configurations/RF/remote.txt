@@ -5,10 +5,6 @@ remote_receiver:
       inverted: False
     dump: 
       - raw
-      #- rc_switch
-      #- nexa
-      #- byronsx
-      #- drayton
     tolerance: 25%
     filter: 60us
     idle: 10ms
