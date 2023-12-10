@@ -1,1 +1,12 @@
+switch:
+  - platform: template
+    name: "$upper_devicename Patio Lights Power Button p1"
+    turn_on_action:
+      - remote_transmitter.transmit_rc_switch_raw:
+          transmitter_id: RF_TX
+          code: '10101010111111111110100'
+          protocol: 1
+          repeat:
+            times: 5
+            wait_time: 1ms
 
