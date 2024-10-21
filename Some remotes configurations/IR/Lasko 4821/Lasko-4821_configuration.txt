@@ -1,0 +1,75 @@
+# This provides IR buttons for controlling a Lasko fan.
+# 
+# I think Lasko may use the same codes for different meanings, so your mileage may vary on the button names.
+#
+# I used the same technique documented at https://ryfow.com/articles/esp-360-remote-rc300/ to find these codes.
+# The tricky part was figuring out that carrier_frequency: 38000 is required. I eventually guessed my way into that.
+
+remote_receiver:
+  - id: IR_RX
+    pin: 
+      number: GPIO19
+      inverted: true
+    idle: 100ms
+    dump: raw
+
+remote_transmitter:
+  - id: IR_TX
+    pin: GPIO13
+    carrier_duty_percent: 50%
+
+button:
+  - platform: template
+    name: "Fan Power"
+    on_press:
+      remote_transmitter.transmit_raw:
+        code: [1313, -383, 1312, -382, 460, -1234, 1313,  -382, 1312, -382, 460, -1235, 466, -1229, 460, -1234, 462, -1233, 462, -1232, 461, -1233, 1314]
+        carrier_frequency: 38000
+        repeat:
+          times: 10
+          wait_time: 7200us
+        transmitter_id: IR_TX
+  - platform: template
+    name: "Fan Speed"
+    on_press:
+      remote_transmitter.transmit_raw:
+        code: [1282, -414, 1307, -387, 454, -1240, 1306, -389, 1279, -415, 454, -1240, 431, -1263, 456, -1238, 432, -1262, 457, -1238, 1308, -387, 430]
+        carrier_frequency: 38000
+        repeat:
+          times: 10
+          wait_time: 8000us
+        transmitter_id: IR_TX
+
+  - platform: template
+    name: "Fan Timer"
+    on_press:
+      remote_transmitter.transmit_raw:
+        code: [1325, -372, 1320, -374, 471, -1223, 1322, -372, 1325, -370, 471, -1223, 471, -1223, 472, -1222, 1323, -373, 471, -1222, 471, -1223, 470]
+        carrier_frequency: 38000
+        repeat:
+          times: 10
+          wait_time: 8000us
+        transmitter_id: IR_TX
+
+  - platform: template
+    name: "Fan Ion"
+    on_press:
+      remote_transmitter.transmit_raw:
+        code: [1325, -372, 1325, -369, 472, -1221, 1327, -369, 1324, -370, 474, -1219, 1326, -370, 473, -1221, 472, -1222, 499, -1195, 476, -1121, 572, -2133, 172]
+        carrier_frequency: 38000
+        repeat:
+          times: 10
+          wait_time: 8000us
+        transmitter_id: IR_TX
+
+  - platform: template
+    name: "Fan Oscillate"
+    on_press:
+      remote_transmitter.transmit_raw:
+        code: [1315, -382, 1313, -381, 462, -1231, 1314, -382, 1314, -380, 464, -1229, 465, -1230, 1287, -409, 463, -1230, 464, -1230, 466, -1229, 464]
+        carrier_frequency: 38000
+        repeat:
+          times: 10
+          wait_time: 8000us
+        transmitter_id: IR_TX
+
