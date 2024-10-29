@@ -57,6 +57,10 @@ wifi:
 web_server:
   port: 80
 
+esp32_improv:
+  authorizer: none
+
+
 # Sets up the improv via serial client for Wi-Fi provisioning
 improv_serial:
 
@@ -66,7 +70,7 @@ dashboard_import:
   import_full_config: true # or true
 
 
-captive_portal:  
+#captive_portal:
 
 #i2c bus definition
 i2c:
