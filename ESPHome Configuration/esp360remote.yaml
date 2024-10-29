@@ -48,14 +48,16 @@ ota:
   - platform: esphome
 
 wifi:
-
+  on_connect:
+    - delay: 5s  # Gives time for improv results to be transmitted
+    - ble.disable:
+  on_disconnect:
+    - ble.enable:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "${name}"
     password: ""
 
-#web_server:
-  #port: 80
 
 esp32_improv:
   authorizer: none
