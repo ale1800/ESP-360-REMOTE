@@ -62,7 +62,7 @@ improv_serial:
 
 
 dashboard_import:
-  package_import_url: https://github.com/ale1800/ESP-360-REMOTE/blob/main/ESPHome%20Configuration/esp360remote.yaml
+  package_import_url: github://ale1800/ESP-360-REMOTE/ESPHome/esp360remote.yaml@main
   import_full_config: true # or true
 
 
