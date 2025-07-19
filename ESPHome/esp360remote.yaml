@@ -145,7 +145,7 @@ remote_receiver:
               if (it != x.end() - 1) str += " ";
             }
             if (str.size() > 0)  str.erase( str.end() - 2);
-            return esphome::to_string("[" + str + "]");'   
+            return "[" + str + "]";'   
     on_pronto:
        - homeassistant.event:
           event: esphome.ir_pronto_code_received
