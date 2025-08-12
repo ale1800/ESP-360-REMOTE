@@ -1,4 +1,4 @@
- I suggest you to buy also the right angle pin I soldered on the RF modules.
+ I suggest you to buy also the right angle pin strips I soldered on the RF modules.
  
  - I used [these](https://www.lcsc.com/product-detail/_XFCN-_C781823.html) for the 3-pin transmitter module ([STX883Pro](https://www.nicerf.com/ask-modules/ask-transmitter-module-stx883pro.html)). 
  They have the standard pitch of 2.54 but they are thin enough to be inserted in the female connector on the board  **You have to buy at least 4 (2x2)** and then cut one. 
