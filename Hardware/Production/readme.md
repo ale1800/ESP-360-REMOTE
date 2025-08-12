@@ -8,3 +8,5 @@
 Pay attention if you need the RF modules in 433MHz or 315MHz version. And then buy the spring antenna accordingly, like [these ones](https://www.lcsc.com/products/Antennas_912.html).
 
 If you let the manufacturer assemble the board, remember to ask them to bend the IR leds to 45°, otherwise the will solder them straight.
+
+You can flash your ESP 360 Remote directly from [here](https://aaelectronics-docs.com/documentation/flashing/flashing.html) using a chromium-base browser
