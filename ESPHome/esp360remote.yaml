@@ -179,3 +179,15 @@ switch:
     pin: 12
     name: "Status Led"
     restore_mode: ALWAYS_ON
+
+infrared:
+  # IR transmitter instance
+  - platform: ir_rf_proxy
+    name: IR Proxy Transmitter
+    id: ir_proxy_tx
+    remote_transmitter_id: IR_TX
+  # IR receiver instance
+  - platform: ir_rf_proxy
+    name: IR Proxy Receiver
+    id: ir_proxy_rx
+    remote_receiver_id: IR_RX
